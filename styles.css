@@ -1,0 +1,103 @@
+:root {
+    --primeira-cor: #d35f1b;
+    --cor-fundo: #808080;
+    --sombra: rgba(0, 0, 0, .3);
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--cor-fundo);
+}
+
+.caixa-principal {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px var(--sombra);
+}
+
+h1 {
+    color: var(--primeira-cor);
+    text-align: center;
+}
+
+.buscar-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.buscar-input {
+    flex-grow: 1;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--primeira-cor);
+}
+
+.buscar-input:focus {
+    border: 2px solid #6b3313;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primeira-cor);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f3a43e;
+}
+
+.receber-lista {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+}
+
+.card-receita {
+    border: 2px solid var(--cor-fundo);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-receita img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.receber-detalhes {
+    margin-top: 20px;
+}
+
+.receber-detalhes img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.receber-detalhes h2 {
+    color: var(--primeira-cor);
+}
+
+.receber-detalhes span {
+    color: var(--primeira-cor);
+}
+
+.receber-detalhes .span2 {
+    color: #096e09;
+}
